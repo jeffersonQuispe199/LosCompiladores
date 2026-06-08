@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundial 2026 - Grupo I</title>
+    <link rel="stylesheet" href="grupoI.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <!-- Barra de Navegación Superior -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <i data-lucide="arrow-left"></i> Volver al <span>Inicio</span>
+            </a>
+            <div class="group-badge">Grupo I</div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Tabla de Posiciones / Miembros del Grupo -->
+        <section class="card group-teams-section">
+            <h2 class="section-title"><i data-lucide="shield"></i> Integrantes del Grupo</h2>
+            <div class="teams-list">
+                <div class="team-item">
+                    <span class="team-rank">1</span>
+                    <span class="team-flag">🇫🇷</span>
+                    <span class="team-name">Francia</span>
+                </div>
+                <div class="team-item">
+                    <span class="team-rank">2</span>
+                    <span class="team-flag">🇸🇳</span>
+                    <span class="team-name">Senegal</span>
+                </div>
+                <div class="team-item">
+                    <span class="team-rank">3</span>
+                    <span class="team-flag">🇮🇶</span>
+                    <span class="team-name">Irak</span>
+                </div>
+                <div class="team-item">
+                    <span class="team-rank">4</span>
+                    <span class="team-flag">🇳🇴</span>
+                    <span class="team-name">Noruega</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Botonera Interactiva -->
+        <section class="tabs-container">
+            <button class="tab-btn active" data-tab="estadios">
+                <i data-lucide="map-pin"></i> Estadios
+            </button>
+            <button class="tab-btn" data-tab="ciudades">
+                <i data-lucide="building-2"></i> Ciudades
+            </button>
+            <button class="tab-btn" data-tab="historia">
+                <i data-lucide="hourglass"></i> Historia
+            </button>
+            <button class="tab-btn" data-tab="estadisticas">
+                <i data-lucide="bar-chart-3"></i> Estadísticas
+            </button>
+            <button class="tab-btn" data-tab="curiosidades">
+                <i data-lucide="sparkles"></i> Curiosidades
+            </button>
+        </section>
+
+        <!-- Contenedor de Contenido Dinámico -->
+        <section class="card content-display">
+            <!-- Sección Estadios -->
+            <div id="estadios" class="tab-content active">
+                <h3><i data-lucide="map-pin"></i> Estadios del Grupo I</h3>
+                <p>El fixture del Grupo I contará con infraestructuras imponentes en la costa oeste norteamericana y el territorio mexicano.</p>
+                <ul>
+                    <li><strong>SoFi Stadium</strong> (Los Ángeles) - Capacidad: 70,240 espectadores. Una obra maestra arquitectónica y futurista con su pantalla de doble vista y techo translúcido.</li>
+                    <li><strong>Estadio BBVA</strong> (Monterrey) - Capacidad: 53,500 espectadores. El gigante de acero mexicano, famoso por sus espectaculares vistas hacia el Cerro de la Silla.</li>
+                </ul>
+            </div>
+
+            <!-- Sección Ciudades -->
+            <div id="ciudades" class="tab-content">
+                <h3><i data-lucide="building-2"></i> Ciudades Sedes</h3>
+                <p>Las selecciones del Grupo I recorrerán ciudades llenas de identidad cultural, pasión futbolística desbordada y una fuerte presencia internacional.</p>
+                <ul>
+                    <li><strong>Los Ángeles:</strong> El epicentro del entretenimiento global, el glamour y una diversidad cultural que garantizará gradas llenas.</li>
+                    <li><strong>Monterrey:</strong> Una de las capitales industriales de México que vive el balompié con una de las intensidades más altas del continente.</li>
+                </ul>
+            </div>
+
+            <!-- Sección Historia -->
+            <div id="historia" class="tab-content">
+                <h3><i data-lucide="hourglass"></i> Historia de los Rivales</h3>
+                <p>Este grupo junta la indiscutible jerarquía de Francia (bicampeona del mundo y potencia hegemónica actual) con el tremendo despliegue físico y técnico de Senegal, una de las grandes potencias de África.</p>
+                <p>Noruega, propulsada por su temible poderío ofensivo y una de las duplas más letales del planeta, regresa a los primeros planos dispuesta a plantarle cara a cualquiera. Irak, los "Leones de Mesopotamia", buscarán imponer su ya conocido juego aguerrido y dar la sorpresa asiática del torneo.</p>
+            </div>
+
+            <!-- Sección Estadísticas -->
+            <div id="estadisticas" class="tab-content">
+                <h3><i data-lucide="bar-chart-3"></i> Estadísticas del Grupo</h3>
+                <p>Resumen del palmarés histórico de los integrantes del Grupo I en la historia de la Copa Mundial:</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>País</th>
+                            <th>Títulos Mundiales</th>
+                            <th>Mejor Resultado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Francia</td>
+                            <td>2</td>
+                            <td>Campeón (1998, 2018)</td>
+                        </tr>
+                        <tr>
+                            <td>Senegal</td>
+                            <td>0</td>
+                            <td>Cuartos de Final (2002)</td>
+                        </tr>
+                        <tr>
+                            <td>Noruega</td>
+                            <td>0</td>
+                            <td>Octavos de Final (1998)</td>
+                        </tr>
+                        <tr>
+                            <td>Irak</td>
+                            <td>0</td>
+                            <td>Fase de Grupos (1986)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Sección Curiosidades -->
+            <div id="curiosidades" class="tab-content">
+                <h3><i data-lucide="sparkles"></i> Datos Curiosos</h3>
+                <ul>
+                    <li>Francia y Senegal tienen una historia mundialista icónica: en el partido inaugural de Corea-Japón 2002, la debutante selección africana derrotó 1-0 a la Francia campeona defensora en una de las mayores sorpresas de todos los tiempos.</li>
+                    <li>La última vez que Noruega asistió a una cita mundialista antes del presente formato expandido fue en Francia 1998, torneo donde lograron clasificar a la fase eliminatoria tras derrotar históricamente a Brasil en la fase de grupos.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <script src="grupoI.js"></script>
+</body>
+</html>

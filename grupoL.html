@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundial 2026 - Grupo L</title>
+    <link rel="stylesheet" href="grupoL.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <!-- Barra de Navegación Superior -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <i data-lucide="arrow-left"></i> Volver al <span>Inicio</span>
+            </a>
+            <div class="group-badge">Grupo L</div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Tabla de Posiciones / Miembros del Grupo -->
+        <section class="card group-teams-section">
+            <h2 class="section-title"><i data-lucide="shield"></i> Integrantes del Grupo</h2>
+            <div class="teams-list">
+                <div class="team-item">
+                    <span class="team-rank">1</span>
+                    <span class="team-flag">🏴󠁧󠁢󠁥󠁮󠁧󠁿</span>
+                    <span class="team-name">Inglaterra</span>
+                </div>
+                <div class="team-item">
+                    <span class="team-rank">2</span>
+                    <span class="team-flag">🇭🇷</span>
+                    <span class="team-name">Croacia</span>
+                </div>
+                <div class="team-item">
+                    <span class="team-rank">3</span>
+                    <span class="team-flag">🇬🇭</span>
+                    <span class="team-name">Ghana</span>
+                </div>
+                <div class="team-item">
+                    <span class="team-rank">4</span>
+                    <span class="team-flag">🇵🇦</span>
+                    <span class="team-name">Panamá</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Botonera Interactiva -->
+        <section class="tabs-container">
+            <button class="tab-btn active" data-tab="estadios">
+                <i data-lucide="map-pin"></i> Estadios
+            </button>
+            <button class="tab-btn" data-tab="ciudades">
+                <i data-lucide="building-2"></i> Ciudades
+            </button>
+            <button class="tab-btn" data-tab="historia">
+                <i data-lucide="hourglass"></i> Historia
+            </button>
+            <button class="tab-btn" data-tab="estadisticas">
+                <i data-lucide="bar-chart-3"></i> Estadísticas
+            </button>
+            <button class="tab-btn" data-tab="curiosidades">
+                <i data-lucide="sparkles"></i> Curiosidades
+            </button>
+        </section>
+
+        <!-- Contenedor de Contenido Dinámico -->
+        <section class="card content-display">
+            <!-- Sección Estadios -->
+            <div id="estadios" class="tab-content active">
+                <h3><i data-lucide="map-pin"></i> Estadios del Grupo L</h3>
+                <p>El cierre de la fase de grupos del torneo se jugará en infraestructuras de última generación tecnológica en territorio estadounidense.</p>
+                <ul>
+                    <li><strong>Gillette Stadium</strong> (Boston / Foxborough) - Capacidad: 65,878 espectadores. Un estadio icónico de la costa este con un moderno faro arquitectónico vigilando el campo.</li>
+                    <li><strong>Mercedes-Benz Stadium</strong> (Atlanta) - Capacidad: 71,000 espectadores. Famoso por su vanguardista techo retráctil en forma de oculus y una gigantesca pantalla de video circular de 360 grados.</li>
+                </ul>
+            </div>
+
+            <!-- Sección Ciudades -->
+            <div id="ciudades" class="tab-content">
+                <h3><i data-lucide="building-2"></i> Ciudades Sedes</h3>
+                <p>Las cuatro aficiones de este competitivo sector llenarán las calles de dos urbes norteamericanas con un inmenso legado histórico y deportivo.</p>
+                <ul>
+                    <li><strong>Boston:</strong> Una de las ciudades más antiguas e intelectuales de Estados Unidos, que se prepara para acoger con enorme fervor el crisol multicultural del fútbol.</li>
+                    <li><strong>Atlanta:</strong> El gran motor cultural y comercial del sur del país, con una infraestructura ideal y un público fanático de las grandes citas deportivas.</li>
+                </ul>
+            </div>
+
+            <!-- Sección Historia -->
+            <div id="historia" class="tab-content">
+                <h3><i data-lucide="hourglass"></i> Historia de los Rivales</h3>
+                <p>Este grupo es sinónimo de choques de estilos de altísima escuela. Inglaterra, campeona del mundo y creadora del juego, asume el liderato buscando plasmar su poderosa ofensiva. Frente a ellos, Croacia aporta la resiliencia infinita, el orden y la finura técnica en el mediocampo de la escuela balcánica.</p>
+                <p>Ghana, las "Estrellas Negras", regresa con ganas de revancha e imponiendo su tradicional despliegue físico y dinamismo alegre en ataque. Finalmente, los "Canaleros" de Panamá buscarán replicar su crecimiento táctico en la Concacaf para vestirse de matagigantes en la escena absoluta.</p>
+            </div>
+
+            <!-- Sección Estadísticas -->
+            <div id="estadisticas" class="tab-content">
+                <h3><i data-lucide="bar-chart-3"></i> Estadísticas del Grupo</h3>
+                <p>Palmarés e hitos cosechados por las selecciones integrantes del Grupo L en la gran historia de los mundiales:</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>País</th>
+                            <th>Títulos Mundiales</th>
+                            <th>Mejor Resultado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Inglaterra</td>
+                            <td>1</td>
+                            <td>Campeón (1966)</td>
+                        </tr>
+                        <tr>
+                            <td>Croacia</td>
+                            <td>0</td>
+                            <td>Subcampeón (2018)</td>
+                        </tr>
+                        <tr>
+                            <td>Ghana</td>
+                            <td>0</td>
+                            <td>Cuartos de Final (2010)</td>
+                        </tr>
+                        <tr>
+                            <td>Panamá</td>
+                            <td>0</td>
+                            <td>Fase de Grupos (2018)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Sección Curiosidades -->
+            <div id="curiosidades" class="tab-content">
+                <h3><i data-lucide="sparkles"></i> Datos Curiosos</h3>
+                <ul>
+                    <li>¿Sabías qué? Inglaterra y Croacia han fraguado una electrizante rivalidad en la historia reciente, destacando la épica semifinal de Rusia 2018 donde los croatas se llevaron la victoria en la prórroga.</li>
+                    <li>Ghana estuvo a solo un penal de convertirse en la primera selección africana en alcanzar una semifinal del mundo en Sudáfrica 2010, en aquel inolvidable y dramático partido contra Uruguay.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <script src="grupoL.js"></script>
+</body>
+</html>

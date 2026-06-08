@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundial 2026 - Grupo B</title>
+    <link rel="stylesheet" href="grupoB.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <i data-lucide="arrow-left"></i> Volver al <span>Inicio</span>
+            </a>
+            <div class="group-badge">Grupo B</div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="card group-teams-section">
+            <h2 class="section-title"><i data-lucide="shield"></i> Integrantes del Grupo</h2>
+            <div class="teams-list">
+                <div class="team-item">
+                    <span class="team-rank">1</span>
+                    <span class="team-flag">🇨🇦</span>
+                    <span class="team-name">Canadá</span>
+                </div>
+                <div class="team-item">
+                    <span class="team-rank">2</span>
+                    <span class="team-flag">🇧🇦</span>
+                    <span class="team-name">Bosnia y Herzegovina</span>
+                </div>
+                <div class="team-item">
+                    <span class="team-rank">3</span>
+                    <span class="team-flag">🇶🇦</span>
+                    <span class="team-name">Catar</span>
+                </div>
+                <div class="team-item">
+                    <span class="team-rank">4</span>
+                    <span class="team-flag">🇨🇭</span>
+                    <span class="team-name">Suiza</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="tabs-container">
+            <button class="tab-btn active" data-tab="estadios">
+                <i data-lucide="map-pin"></i> Estadios
+            </button>
+            <button class="tab-btn" data-tab="ciudades">
+                <i data-lucide="building-2"></i> Ciudades
+            </button>
+            <button class="tab-btn" data-tab="historia">
+                <i data-lucide="hourglass"></i> Historia
+            </button>
+            <button class="tab-btn" data-tab="estadisticas">
+                <i data-lucide="bar-chart-3"></i> Estadísticas
+            </button>
+            <button class="tab-btn" data-tab="curiosidades">
+                <i data-lucide="sparkles"></i> Curiosidades
+            </button>
+        </section>
+
+        <section class="card content-display">
+            <div id="estadios" class="tab-content active">
+                <h3><i data-lucide="map-pin"></i> Estadios del Grupo B</h3>
+                <p>Las sedes asignadas para el Grupo B cuentan con una arquitectura vanguardista y zonas de hospitalidad de última generación.</p>
+                <ul>
+                    <li><strong>BC Place</strong> (Vancouver) - Capacidad: 54,500 espectadores. Un estadio con techo retráctil imponente.</li>
+                    <li><strong>Lumen Field</strong> (Seattle) - Capacidad: 69,000 espectadores. Conocido por su increíble acústica y atmósfera.</li>
+                </ul>
+            </div>
+
+            <div id="ciudades" class="tab-content">
+                <h3><i data-lucide="building-2"></i> Ciudades Sedes</h3>
+                <p>Las espectaculares ciudades costeras e industriales del norte que recibirán a los fanáticos del Grupo B.</p>
+                <ul>
+                    <li><strong>Vancouver:</strong> Una joya canadiense rodeada de naturaleza, océano y montañas majestuosas.</li>
+                    <li><strong>Seattle:</strong> La ciudad del futuro tecnológico y musical, lista para vibrar con la pasión del fútbol mundial.</li>
+                </ul>
+            </div>
+
+            <div id="historia" class="tab-content">
+                <h3><i data-lucide="hourglass"></i> Historia de los Rivales</h3>
+                <p>Un grupo con contrastes muy marcados: la experiencia europea de Suiza se mide ante el vertiginoso crecimiento del fútbol norteamericano (Canadá) y la disciplina de los equipos de Medio Oriente y los Balcanes.</p>
+                <p>Canadá busca consolidar la generación de oro que asombró al continente en las eliminatorias de Concacaf.</p>
+            </div>
+
+            <div id="estadisticas" class="tab-content">
+                <h3><i data-lucide="bar-chart-3"></i> Estadísticas del Grupo</h3>
+                <p>Datos globales de las selecciones del Grupo B en la historia de los torneos mundiales:</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>País</th>
+                            <th>Participaciones</th>
+                            <th>Mejor Resultado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Suiza</td>
+                            <td>12</td>
+                            <td>Cuartos de Final (1934, 1938, 1954)</td>
+                        </tr>
+                        <tr>
+                            <td>Canadá</td>
+                            <td>2</td>
+                            <td>Fase de Grupos (1986, 2022)</td>
+                        </tr>
+                        <tr>
+                            <td>Bosnia y Herz.</td>
+                            <td>1</td>
+                            <td>Fase de Grupos (2014)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="curiosidades" class="tab-content">
+                <h3><i data-lucide="sparkles"></i> Datos Curiosos</h3>
+                <ul>
+                    <li>¿Sabías qué? El escudo y uniforme de Canadá rinden homenaje a la icónica hoja de arce (*maple leaf*) que es símbolo nacional desde el siglo XVIII.</li>
+                    <li>Catar participa en esta edición buscando demostrar su evolución futbolística tras haber sido el anfitrión del torneo de 2022.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <script src="grupoB.js"></script>
+</body>
+</html>

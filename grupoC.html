@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundial 2026 - Grupo C</title>
+    <link rel="stylesheet" href="grupoC.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <i data-lucide="arrow-left"></i> Volver al <span>Inicio</span>
+            </a>
+            <div class="group-badge">Grupo C</div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="card group-teams-section">
+            <h2 class="section-title"><i data-lucide="shield"></i> Integrantes del Grupo</h2>
+            <div class="teams-list">
+                <div class="team-item">
+                    <span class="team-rank">1</span>
+                    <span class="team-flag">🇧🇷</span>
+                    <span class="team-name">Brasil</span>
+                </div>
+                <div class="team-item">
+                    <span class="team-rank">2</span>
+                    <span class="team-flag">🇲🇦</span>
+                    <span class="team-name">Marruecos</span>
+                </div>
+                <div class="team-item">
+                    <span class="team-rank">3</span>
+                    <span class="team-flag">🇭🇹</span>
+                    <span class="team-name">Haití</span>
+                </div>
+                <div class="team-item">
+                    <span class="team-rank">4</span>
+                    <span class="team-flag">🏴󠁧󠁢󠁳󠁣󠁴󠁿</span>
+                    <span class="team-name">Escocia</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="tabs-container">
+            <button class="tab-btn active" data-tab="estadios">
+                <i data-lucide="map-pin"></i> Estadios
+            </button>
+            <button class="tab-btn" data-tab="ciudades">
+                <i data-lucide="building-2"></i> Ciudades
+            </button>
+            <button class="tab-btn" data-tab="historia">
+                <i data-lucide="hourglass"></i> Historia
+            </button>
+            <button class="tab-btn" data-tab="estadisticas">
+                <i data-lucide="bar-chart-3"></i> Estadísticas
+            </button>
+            <button class="tab-btn" data-tab="curiosidades">
+                <i data-lucide="sparkles"></i> Curiosidades
+            </button>
+        </section>
+
+        <section class="card content-display">
+            <div id="estadios" class="tab-content active">
+                <h3><i data-lucide="map-pin"></i> Estadios del Grupo C</h3>
+                <p>Las sedes elegidas para los encuentros del Grupo C albergarán la magia del 'Jogo Bonito' y la pasión incondicional de las aficiones de África y Europa.</p>
+                <ul>
+                    <li><strong>MetLife Stadium</strong> (New York/New Jersey) - Capacidad: 82,500 espectadores.</li>
+                    <li><strong>Hard Rock Stadium</strong> (Miami) - Capacidad: 64,700 espectadores. Un ambiente tropical idóneo.</li>
+                </ul>
+            </div>
+
+            <div id="ciudades" class="tab-content">
+                <h3><i data-lucide="building-2"></i> Ciudades Sedes</h3>
+                <p>Dos de las metrópolis más influyentes, cosmopolitas y multiculturales del continente norteamericano.</p>
+                <ul>
+                    <li><strong>Nueva York / Nueva Jersey:</strong> El epicentro financiero y cultural del mundo, listo para los eventos deportivos masivos.</li>
+                    <li><strong>Miami:</strong> Una ciudad con un arraigo latino gigantesco, donde el fútbol se vive con música y fiesta costera.</li>
+                </ul>
+            </div>
+
+            <div id="historia" class="tab-content">
+                <h3><i data-lucide="hourglass"></i> Historia de los Rivales</h3>
+                <p>Un grupo histórico. Brasil, el único pentacampeón mundial, se mide ante Marruecos, la gran revelación africana que hizo historia al llegar a las semifinales en el torneo de 2022.</p>
+                <p>Escocia aporta su tradicional garra británica e historia de la vieja escuela, mientras que Haití busca revivir las hazañas de su recordada clasificación de 1974.</p>
+            </div>
+
+            <div id="estadisticas" class="tab-content">
+                <h3><i data-lucide="bar-chart-3"></i> Estadísticas del Grupo</h3>
+                <p>Rendimiento histórico acumulado en torneos mundiales de los integrantes del Grupo C:</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>País</th>
+                            <th>Títulos</th>
+                            <th>Mejor Resultado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Brasil</td>
+                            <td>5</td>
+                            <td>Campeón (1958, 1962, 1970, 1994, 2002)</td>
+                        </tr>
+                        <tr>
+                            <td>Marruecos</td>
+                            <td>0</td>
+                            <td>Cuarto Lugar (2022)</td>
+                        </tr>
+                        <tr>
+                            <td>Escocia</td>
+                            <td>0</td>
+                            <td>Fase de Grupos (8 ediciones)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="curiosidades" class="tab-content">
+                <h3><i data-lucide="sparkles"></i> Datos Curiosos</h3>
+                <ul>
+                    <li>¿Sabías qué? Brasil ostenta el récord absoluto de haber participado en todas y cada una de las ediciones de la Copa Mundial de la FIFA.</li>
+                    <li>Marruecos y Brasil se enfrentaron en el Mundial de Francia 1998, con una victoria para los sudamericanos por 3-0 en la fase de grupos.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <script src="grupoC.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundial 2026 - Panel de Control</title>
+    <link rel="stylesheet" href="Principal.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <i data-lucide="trophy"></i> MUNDIAL<span>2026</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#" class="nav-link active" data-target="inicio"><i data-lucide="home"></i> Inicio</a></li>
+                <li><a href="#grupos" class="nav-link" data-target="grupos"><i data-lucide="layout-grid"></i> Grupos</a></li>
+                <li><a href="#github" class="nav-link" data-target="github"><i data-lucide="users"></i> Equipo</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero-section">
+            <h1>Álbum de Control & Estadísticas</h1>
+            <p>Accede de forma rápida a las clasificaciones y gestión del desarrollo.</p>
+        </section>
+
+        <div class="grid-container">
+            <section id="grupos" class="card">
+                <h2 class="card-title">
+                    <i data-lucide="flag" style="color: var(--accent-color);"></i> 
+                    Grupos del Mundial
+                </h2>
+                <div class="groups-grid">
+                    <a href="grupoA.html" class="group-link">Grupo A</a>
+                    <a href="grupoB.html" class="group-link">Grupo B</a>
+                    <a href="grupoC.html" class="group-link">Grupo C</a>
+                    <a href="grupoD.html" class="group-link">Grupo D</a>
+                    <a href="grupoE.html" class="group-link">Grupo E</a>
+                    <a href="grupoF.html" class="group-link">Grupo F</a>
+                    <a href="grupoG.html" class="group-link">Grupo G</a>
+                    <a href="grupoH.html" class="group-link">Grupo H</a>
+                    <a href="grupoI.html" class="group-link">Grupo I</a>
+                    <a href="grupoJ.html" class="group-link">Grupo J</a>
+                    <a href="grupoK.html" class="group-link">Grupo K</a>
+                    <a href="grupoL.html" class="group-link">Grupo L</a>
+                </div>
+            </section>
+
+            <section id="github" class="card">
+                <h2 class="card-title">
+                    <i data-lucide="github" style="color: var(--accent-color);"></i> 
+                    Repositorio & Team
+                </h2>
+                <div class="team-list">
+                    <div class="team-member">
+                        <div class="member-info">
+                            <div class="member-avatar"><i data-lucide="code-2"></i></div>
+                            <div>
+                                <strong>gianlucaparedes6-sys</strong>
+                                <div class="member-role">Backend</div>
+                            </div>
+                        </div>
+                        <a href="https://github.com" target="_blank" class="github-badge">
+                            <i data-lucide="external-link"></i> Perfil
+                        </a>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-info">
+                            <div class="member-avatar"><i data-lucide="terminal"></i></div>
+                            <div>
+                                <strong>jeffersonQuispe199</strong>
+                                <div class="member-role">Backend</div>
+                            </div>
+                        </div>
+                        <a href="https://github.com" target="_blank" class="github-badge">
+                            <i data-lucide="external-link"></i> Perfil
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Sistema de Gestión Mundial. Desarrollado con Arquitectura Web Limpia.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
