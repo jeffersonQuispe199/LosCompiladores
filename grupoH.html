@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundial 2026 - Grupo H</title>
+    <link rel="stylesheet" href="grupoH.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <!-- Barra de Navegación Superior -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <i data-lucide="arrow-left"></i> Volver al <span>Inicio</span>
+            </a>
+            <div class="group-badge">Grupo H</div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Tabla de Posiciones / Miembros del Grupo -->
+        <section class="card group-teams-section">
+            <h2 class="section-title"><i data-lucide="shield"></i> Integrantes del Grupo</h2>
+            <div class="teams-list">
+                <div class="team-item">
+                    <span class="team-rank">1</span>
+                    <span class="team-flag">🇪🇸</span>
+                    <span class="team-name">España</span>
+                </div>
+                <div class="team-item">
+                    <span class="team-rank">2</span>
+                    <span class="team-flag">🇨🇻</span>
+                    <span class="team-name">Islas de Cabo Verde</span>
+                </div>
+                <div class="team-item">
+                    <span class="team-rank">3</span>
+                    <span class="team-flag">🇸🇦</span>
+                    <span class="team-name">Arabia Saudí</span>
+                </div>
+                <div class="team-item">
+                    <span class="team-rank">4</span>
+                    <span class="team-flag">🇺🇾</span>
+                    <span class="team-name">Uruguay</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Botonera Interactiva -->
+        <section class="tabs-container">
+            <button class="tab-btn active" data-tab="estadios">
+                <i data-lucide="map-pin"></i> Estadios
+            </button>
+            <button class="tab-btn" data-tab="ciudades">
+                <i data-lucide="building-2"></i> Ciudades
+            </button>
+            <button class="tab-btn" data-tab="historia">
+                <i data-lucide="hourglass"></i> Historia
+            </button>
+            <button class="tab-btn" data-tab="estadisticas">
+                <i data-lucide="bar-chart-3"></i> Estadísticas
+            </button>
+            <button class="tab-btn" data-tab="curiosidades">
+                <i data-lucide="sparkles"></i> Curiosidades
+            </button>
+        </section>
+
+        <!-- Contenedor de Contenido Dinámico -->
+        <section class="card content-display">
+            <!-- Sección Estadios -->
+            <div id="estadios" class="tab-content active">
+                <h3><i data-lucide="map-pin"></i> Estadios del Grupo H</h3>
+                <p>Las últimas jornadas de la fase de clasificación del Grupo H nos llevarán a dos de los recintos más icónicos y con mayor capacidad del torneo.</p>
+                <ul>
+                    <li><strong>Azteca Stadium</strong> (Ciudad de México) - Capacidad: 87,523 espectadores. El legendario coloso que reescribe la historia del fútbol.</li>
+                    <li><strong>NRG Stadium</strong> (Houston) - Capacidad: 72,200 espectadores. Un entorno moderno con un despliegue de ingeniería espectacular.</li>
+                </ul>
+            </div>
+
+            <!-- Sección Ciudades -->
+            <div id="ciudades" class="tab-content">
+                <h3><i data-lucide="building-2"></i> Ciudades Sedes</h3>
+                <p>Dos metrópolis gigantescas que combinan pasión incondicional por el deporte y una vibrante oferta multicultural.</p>
+                <ul>
+                    <li><strong>Ciudad de México:</strong> Una capital colosal con una herencia futbolística inigualable a nivel mundial.</li>
+                    <li><strong>Houston:</strong> Un gran polo de desarrollo en Texas con una amplia comunidad hispana y latina.</li>
+                </ul>
+            </div>
+
+            <!-- Sección Historia -->
+            <div id="historia" class="tab-content">
+                <h3><i data-lucide="hourglass"></i> Historia de los Rivales</h3>
+                <p>Un grupo con un linaje tremendo. España y Uruguay aportan un total combinado de tres estrellas mundiales y estilos muy definidos: el fútbol de posesión de "La Roja" frente a la mítica e inquebrantable "Garra Charrúa".</p>
+                <p>Arabia Saudí llega con el cartel de ser un rival impredecible en Asia, mientras que las Islas de Cabo Verde firman una hazaña histórica al meterse entre los mejores del planeta, buscando sorprender con su velocidad caribeña-africana.</p>
+            </div>
+
+            <!-- Sección Estadísticas -->
+            <div id="estadisticas" class="tab-content">
+                <h3><i data-lucide="bar-chart-3"></i> Estadísticas del Grupo</h3>
+                <p>Palmarés e historial acumulado de las selecciones que componen el Grupo H:</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>País</th>
+                            <th>Títulos Mundiales</th>
+                            <th>Mejor Resultado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Uruguay</td>
+                            <td>2</td>
+                            <td>Campeón (1930, 1950)</td>
+                        </tr>
+                        <tr>
+                            <td>España</td>
+                            <td>1</td>
+                            <td>Campeón (2010)</td>
+                        </tr>
+                        <tr>
+                            <td>Arabia Saudí</td>
+                            <td>0</td>
+                            <td>Octavos de Final (1994)</td>
+                        </tr>
+                        <tr>
+                            <td>Islas de Cabo Verde</td>
+                            <td>0</td>
+                            <td>Debut Absoluto</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Sección Curiosidades -->
+            <div id="curiosidades" class="tab-content">
+                <h3><i data-lucide="sparkles"></i> Datos Curiosos</h3>
+                <ul>
+                    <li>¿Sabías qué? Arabia Saudí protagonizó una de las mayores sorpresas del fútbol moderno al derrotar a la Argentina de Lionel Messi en el partido inaugural de su grupo en 2022.</li>
+                    <li>Cabo Verde es uno de los países con menor territorio y población en lograr una clasificación a la máxima cita del fútbol de la FIFA.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <script src="grupoH.js"></script>
+</body>
+</html>

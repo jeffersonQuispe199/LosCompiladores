@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundial 2026 - Grupo G</title>
+    <link rel="stylesheet" href="grupoG.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <!-- Barra de Navegación Superior -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <i data-lucide="arrow-left"></i> Volver al <span>Inicio</span>
+            </a>
+            <div class="group-badge">Grupo G</div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Tabla de Posiciones / Miembros del Grupo -->
+        <section class="card group-teams-section">
+            <h2 class="section-title"><i data-lucide="shield"></i> Integrantes del Grupo</h2>
+            <div class="teams-list">
+                <div class="team-item">
+                    <span class="team-rank">1</span>
+                    <span class="team-flag">🇧🇪</span>
+                    <span class="team-name">Bélgica</span>
+                </div>
+                <div class="team-item">
+                    <span class="team-rank">2</span>
+                    <span class="team-flag">🇪🇬</span>
+                    <span class="team-name">Egipto</span>
+                </div>
+                <div class="team-item">
+                    <span class="team-rank">3</span>
+                    <span class="team-flag">🇮🇷</span>
+                    <span class="team-name">RI de Irán</span>
+                </div>
+                <div class="team-item">
+                    <span class="team-rank">4</span>
+                    <span class="team-flag">🇳🇿</span>
+                    <span class="team-name">Nueva Zelanda</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Botonera Interactiva -->
+        <section class="tabs-container">
+            <button class="tab-btn active" data-tab="estadios">
+                <i data-lucide="map-pin"></i> Estadios
+            </button>
+            <button class="tab-btn" data-tab="ciudades">
+                <i data-lucide="building-2"></i> Ciudades
+            </button>
+            <button class="tab-btn" data-tab="historia">
+                <i data-lucide="hourglass"></i> Historia
+            </button>
+            <button class="tab-btn" data-tab="estadisticas">
+                <i data-lucide="bar-chart-3"></i> Estadísticas
+            </button>
+            <button class="tab-btn" data-tab="curiosidades">
+                <i data-lucide="sparkles"></i> Curiosidades
+            </button>
+        </section>
+
+        <!-- Contenedor de Contenido Dinámico -->
+        <section class="card content-display">
+            <!-- Sección Estadios -->
+            <div id="estadios" class="tab-content active">
+                <h3><i data-lucide="map-pin"></i> Estadios del Grupo G</h3>
+                <p>El Grupo G desplegará sus emociones en sedes del centro y norte del continente, combinando tradición futbolística y modernidad estructural.</p>
+                <ul>
+                    <li><strong>Arrowhead Stadium</strong> (Kansas City) - Capacidad: 76,400 espectadores. Famoso por romper récords de decibelios por el ruido de sus fanáticos.</li>
+                    <li><strong>Lincoln Financial Field</strong> (Filadelfia) - Capacidad: 67,500 espectadores. Un recinto vibrante con una excelente visibilidad.</li>
+                </ul>
+            </div>
+
+            <!-- Sección Ciudades -->
+            <div id="ciudades" class="tab-content">
+                <h3><i data-lucide="building-2"></i> Ciudades Sedes</h3>
+                <p>Ciudades cargadas de historia y cultura que se preparan para dar una cálida bienvenida a los hinchas de los cuatro continentes representados en este grupo.</p>
+                <ul>
+                    <li><strong>Kansas City:</strong> Reconocida como una de las ciudades más futboleras del centro de Estados Unidos, con una enorme pasión comunitaria.</li>
+                    <li><strong>Filadelfia:</strong> Cuna histórica del país, una metrópoli multicultural ideal para albergar la diversidad del Mundial.</li>
+                </ul>
+            </div>
+
+            <!-- Sección Historia -->
+            <div id="historia" class="tab-content">
+                <h3><i data-lucide="hourglass"></i> Historia de los Rivales</h3>
+                <p>Un grupo sumamente equilibrado y con representación global. Bélgica encabeza el sector buscando consolidar una nueva generación de oro en Europa. Egipto, los 'Faraones', traen la mística y el peso del equipo más ganador en la historia de la Copa Africana de Naciones.</p>
+                <p>Por su parte, la República Islámica de Irán busca dar el golpe definitivo tras ser históricamente un hueso duro de roer en Asia, mientras que los 'All Whites' de Nueva Zelanda quieren revivir su histórica solidez defensiva que sorprendió al planeta en ediciones pasadas.</p>
+            </div>
+
+            <!-- Sección Estadísticas -->
+            <div id="estadisticas" class="tab-content">
+                <h3><i data-lucide="bar-chart-3"></i> Estadísticas del Grupo</h3>
+                <p>Historial y presencias destacadas de las selecciones del Grupo G en la historia de los mundiales:</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>País</th>
+                            <th>Participaciones</th>
+                            <th>Mejor Resultado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Bélgica</td>
+                            <td>14</td>
+                            <td>Tercer Lugar (2018)</td>
+                        </tr>
+                        <tr>
+                            <td>Egipto</td>
+                            <td>3</td>
+                            <td>Fase de Grupos</td>
+                        </tr>
+                        <tr>
+                            <td>RI de Irán</td>
+                            <td>6</td>
+                            <td>Fase de Grupos</td>
+                        </tr>
+                        <tr>
+                            <td>Nueva Zelanda</td>
+                            <td>2</td>
+                            <td>Fase de Grupos (Invicto en 2010)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Sección Curiosidades -->
+            <div id="curiosidades" class="tab-content">
+                <h3><i data-lucide="sparkles"></i> Datos Curiosos</h3>
+                <ul>
+                    <li>¿Sabías qué? En el Mundial de Sudáfrica 2010, Nueva Zelanda fue la única selección que terminó el torneo completamente invicta (3 empates), superando en esa estadística al propio campeón, España.</li>
+                    <li>Egipto fue la primera selección de todo el continente africano en clasificar y participar en una Copa Mundial de la FIFA, lográndolo en la edición de Italia 1934.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <script src="grupoG.js"></script>
+</body>
+</html>

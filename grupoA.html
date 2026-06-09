@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundial 2026 - Grupo A</title>
+    <link rel="stylesheet" href="grupoA.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <i data-lucide="arrow-left"></i> Volver al <span>Inicio</span>
+            </a>
+            <div class="group-badge">Grupo A</div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="card group-teams-section">
+            <h2 class="section-title"><i data-lucide="shield"></i> Integrantes del Grupo</h2>
+            <div class="teams-list">
+                <div class="team-item">
+                    <span class="team-rank">1</span>
+                    <span class="team-flag">🇲🇽</span>
+                    <span class="team-name">México</span>
+                </div>
+                <div class="team-item">
+                    <span class="team-rank">2</span>
+                    <span class="team-flag">🇿🇦</span>
+                    <span class="team-name">Sudáfrica</span>
+                </div>
+                <div class="team-item">
+                    <span class="team-rank">3</span>
+                    <span class="team-flag">🇰🇷</span>
+                    <span class="team-name">República de Corea</span>
+                </div>
+                <div class="team-item">
+                    <span class="team-rank">4</span>
+                    <span class="team-flag">🇨🇿</span>
+                    <span class="team-name">Chequia</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="tabs-container">
+            <button class="tab-btn active" data-tab="estadios">
+                <i data-lucide="map-pin"></i> Estadios
+            </button>
+            <button class="tab-btn" data-tab="ciudades">
+                <i data-lucide="building-2"></i> Ciudades
+            </button>
+            <button class="tab-btn" data-tab="historia">
+                <i data-lucide="hourglass"></i> Historia
+            </button>
+            <button class="tab-btn" data-tab="estadisticas">
+                <i data-lucide="bar-chart-3"></i> Estadísticas
+            </button>
+            <button class="tab-btn" data-tab="curiosidades">
+                <i data-lucide="sparkles"></i> Curiosidades
+            </button>
+        </section>
+
+        <section class="card content-display">
+            <div id="estadios" class="tab-content active">
+                <h3><i data-lucide="map-pin"></i> Estadios del Grupo A</h3>
+                <p>Los partidos de este grupo se disputarán en sedes de primer nivel tecnológico y gran capacidad adaptadas para el torneo internacional.</p>
+                <ul>
+                    <li><strong>Estadio Azteca</strong> (Ciudad de México) - Capacidad: 87,000 espectadores.</li>
+                    <li><strong>Estadio BBVA</strong> (Monterrey) - Capacidad: 53,500 espectadores.</li>
+                </ul>
+            </div>
+
+            <div id="ciudades" class="tab-content">
+                <h3><i data-lucide="building-2"></i> Ciudades Sedes</h3>
+                <p>Conoce las vibrantes metrópolis que albergarán a las hinchadas de México, Sudáfrica, Corea y Chequia.</p>
+                <ul>
+                    <li><strong>Ciudad de México:</strong> Una megalópolis histórica llena de cultura, gastronomía y pasión futbolera.</li>
+                    <li><strong>Monterrey:</strong> El motor del norte, rodeado de impresionantes montañas y estadios de última generación.</li>
+                </ul>
+            </div>
+
+            <div id="historia" class="tab-content">
+                <h3><i data-lucide="hourglass"></i> Historia de los Rivales</h3>
+                <p>Un choque de culturas y estilos futbolísticos únicos que ya tienen antecedentes en torneos previos.</p>
+                <p>Inolvidable el partido inaugural de la Copa del Mundo 2010 donde México y Sudáfrica empataron 1-1 con aquel legendario gol de Siphiwe Tshabalala.</p>
+            </div>
+
+            <div id="estadisticas" class="tab-content">
+                <h3><i data-lucide="bar-chart-3"></i> Estadísticas del Grupo</h3>
+                <p>Rendimiento histórico acumulado en torneos mundiales de los integrantes del Grupo A:</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>País</th>
+                            <th>Partidos Jugados</th>
+                            <th>Mejor Resultado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>México</td>
+                            <td>60</td>
+                            <td>Cuartos de Final (1970, 1986)</td>
+                        </tr>
+                        <tr>
+                            <td>República de Corea</td>
+                            <td>37</td>
+                            <td>Cuarto Lugar (2002)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="curiosidades" class="tab-content">
+                <h3><i data-lucide="sparkles"></i> Datos Curiosos</h3>
+                <ul>
+                    <li>¿Sabías qué? República de Corea ha clasificado a todos los mundiales de manera consecutiva desde 1986.</li>
+                    <li>Chequia compite bajo este nombre abreviado oficial, manteniendo la herencia futbolística de la antigua Checoslovaquia.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <script src="grupoA.js"></script>
+</body>
+</html>

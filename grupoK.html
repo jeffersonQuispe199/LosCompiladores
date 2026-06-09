@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundial 2026 - Grupo K</title>
+    <link rel="stylesheet" href="grupoK.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <!-- Barra de Navegación Superior -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">
+                <i data-lucide="arrow-left"></i> Volver al <span>Inicio</span>
+            </a>
+            <div class="group-badge">Grupo K</div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Tabla de Posiciones / Miembros del Grupo -->
+        <section class="card group-teams-section">
+            <h2 class="section-title"><i data-lucide="shield"></i> Integrantes del Grupo</h2>
+            <div class="teams-list">
+                <div class="team-item">
+                    <span class="team-rank">1</span>
+                    <span class="team-flag">🇵🇹</span>
+                    <span class="team-name">Portugal</span>
+                </div>
+                <div class="team-item">
+                    <span class="team-rank">2</span>
+                    <span class="team-flag">🇨🇩</span>
+                    <span class="team-name">RD Congo</span>
+                </div>
+                <div class="team-item">
+                    <span class="team-rank">3</span>
+                    <span class="team-flag">🇺🇿</span>
+                    <span class="team-name">Uzbekistán</span>
+                </div>
+                <div class="team-item">
+                    <span class="team-rank">4</span>
+                    <span class="team-flag">🇨🇴</span>
+                    <span class="team-name">Colombia</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Botonera Interactiva -->
+        <section class="tabs-container">
+            <button class="tab-btn active" data-tab="estadios">
+                <i data-lucide="map-pin"></i> Estadios
+            </button>
+            <button class="tab-btn" data-tab="ciudades">
+                <i data-lucide="building-2"></i> Ciudades
+            </button>
+            <button class="tab-btn" data-tab="historia">
+                <i data-lucide="hourglass"></i> Historia
+            </button>
+            <button class="tab-btn" data-tab="estadisticas">
+                <i data-lucide="bar-chart-3"></i> Estadísticas
+            </button>
+            <button class="tab-btn" data-tab="curiosidades">
+                <i data-lucide="sparkles"></i> Curiosidades
+            </button>
+        </section>
+
+        <!-- Contenedor de Contenido Dinámico -->
+        <section class="card content-display">
+            <!-- Sección Estadios -->
+            <div id="estadios" class="tab-content active">
+                <h3><i data-lucide="map-pin"></i> Estadios del Grupo K</h3>
+                <p>Las batallas tácticas de este grupo se disputarán en espectaculares recintos de la costa este y las regiones del sur norteamericano.</p>
+                <ul>
+                    <li><strong>MetLife Stadium</strong> (Nueva York / Nueva Jersey) - Capacidad: 82,500 espectadores. Un coloso imponente multifuncional que albergará duelos de altísima tensión.</li>
+                    <li><strong>AT&T Stadium</strong> (Dallas) - Capacidad: 80,000 espectadores. Una joya de la arquitectura moderna con pantallas gigantes colgantes suspendidas de lado a lado.</li>
+                </ul>
+            </div>
+
+            <!-- Sección Ciudades -->
+            <div id="ciudades" class="tab-content">
+                <h3><i data-lucide="building-2"></i> Ciudades Sedes</h3>
+                <p>Las fanaticadas del Grupo K llenarán de color dos de los núcleos metropolitanos más dinámicos e importantes del continente.</p>
+                <ul>
+                    <li><strong>Nueva York / Nueva Jersey:</strong> Una de las mayores capitales multiculturales del planeta, con comunidades de todos los rincones del mundo listas para alentar.</li>
+                    <li><strong>Dallas:</strong> Gigante de Texas con infraestructura de primer nivel, conocida por su cálida hospitalidad sureña y gran afición futbolera.</li>
+                </ul>
+            </div>
+
+            <!-- Sección Historia -->
+            <div id="historia" class="tab-content">
+                <h3><i data-lucide="hourglass"></i> Historia de los Rivales</h3>
+                <p>El Grupo K es un cocktail perfecto de talento puro y despliegue físico. Portugal encabeza la zona con su constelación de estrellas europeas y un juego de posesión vertical. Al frente, la Colombia de los "Cafeteros" aporta su tradicional ritmo alegre, fluidez técnica y verticalidad sudamericana.</p>
+                <p>La República Democrática del Congo regresa dispuesta a imponer su velocidad y fuerza atlética en transiciones letales, mientras que Uzbekistán acude con la chapa de ser una de las potencias emergentes y tácticamente más disciplinadas del continente asiático.</p>
+            </div>
+
+            <!-- Sección Estadísticas -->
+            <div id="estadisticas" class="tab-content">
+                <h3><i data-lucide="bar-chart-3"></i> Estadísticas del Grupo</h3>
+                <p>Rendimiento e hitos históricos de las naciones del Grupo K en copas del mundo de la FIFA:</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>País</th>
+                            <th>Participaciones</th>
+                            <th>Mejor Resultado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Portugal</td>
+                            <td>8</td>
+                            <td>Tercer Lugar (1966)</td>
+                        </tr>
+                        <tr>
+                            <td>Colombia</td>
+                            <td>6</td>
+                            <td>Cuartos de Final (2014)</td>
+                        </tr>
+                        <tr>
+                            <td>RD Congo</td>
+                            <td>1</td>
+                            <td>Fase de Grupos (1974 como Zaire)</td>
+                        </tr>
+                        <tr>
+                            <td>Uzbekistán</td>
+                            <td>0</td>
+                            <td>Debut Absoluto</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Sección Curiosidades -->
+            <div id="curiosidades" class="tab-content">
+                <h3><i data-lucide="sparkles"></i> Datos Curiosos</h3>
+                <ul>
+                    <li>¿Sabías qué? La República Democrática del Congo hizo historia en Alemania 1974 bajo el nombre de Zaire, convirtiéndose en la primera selección del África subsahariana en clasificar a una fase final de la Copa del Mundo.</li>
+                    <li>Colombia deslumbró al planeta entero en la edición de Brasil 2014 con su vistoso juego colectivo, finalizando invicta en fase de grupos y consagrando a James Rodríguez como la Bota de Oro del certamen.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <script src="grupoK.js"></script>
+</body>
+</html>

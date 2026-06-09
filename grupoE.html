@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundial 2026 - Grupo E</title>
+    <link rel="stylesheet" href="grupoE.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <!-- Barra de Navegación Superior -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <i data-lucide="arrow-left"></i> Volver al <span>Inicio</span>
+            </a>
+            <div class="group-badge">Grupo E</div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Tabla de Posiciones / Miembros del Grupo -->
+        <section class="card group-teams-section">
+            <h2 class="section-title"><i data-lucide="shield"></i> Integrantes del Grupo</h2>
+            <div class="teams-list">
+                <div class="team-item">
+                    <span class="team-rank">1</span>
+                    <span class="team-flag">🇩🇪</span>
+                    <span class="team-name">Alemania</span>
+                </div>
+                <div class="team-item">
+                    <span class="team-rank">2</span>
+                    <span class="team-flag">🇨🇼</span>
+                    <span class="team-name">Curazao</span>
+                </div>
+                <div class="team-item">
+                    <span class="team-rank">3</span>
+                    <span class="team-flag">🇨🇮</span>
+                    <span class="team-name">Costa de Marfil</span>
+                </div>
+                <div class="team-item">
+                    <span class="team-rank">4</span>
+                    <span class="team-flag">🇪🇨</span>
+                    <span class="team-name">Ecuador</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Botonera Interactiva -->
+        <section class="tabs-container">
+            <button class="tab-btn active" data-tab="estadios">
+                <i data-lucide="map-pin"></i> Estadios
+            </button>
+            <button class="tab-btn" data-tab="ciudades">
+                <i data-lucide="building-2"></i> Ciudades
+            </button>
+            <button class="tab-btn" data-tab="historia">
+                <i data-lucide="hourglass"></i> Historia
+            </button>
+            <button class="tab-btn" data-tab="estadisticas">
+                <i data-lucide="bar-chart-3"></i> Estadísticas
+            </button>
+            <button class="tab-btn" data-tab="curiosidades">
+                <i data-lucide="sparkles"></i> Curiosidades
+            </button>
+        </section>
+
+        <!-- Contenedor de Contenido Dinámico -->
+        <section class="card content-display">
+            <!-- Sección Estadios -->
+            <div id="estadios" class="tab-content active">
+                <h3><i data-lucide="map-pin"></i> Estadios del Grupo E</h3>
+                <p>El Grupo E disputará sus partidos en recintos monumentales, equipados con sistemas de climatización avanzados y gramados de última generación.</p>
+                <ul>
+                    <li><strong>NRG Stadium</strong> (Houston) - Capacidad: 72,200 espectadores. Un imponente estadio con techo retráctil.</li>
+                    <li><strong>Levi's Stadium</strong> (San Francisco / Santa Clara) - Capacidad: 68,500 espectadores. Con un enfoque altamente ecológico y tecnológico.</li>
+                </ul>
+            </div>
+
+            <!-- Sección Ciudades -->
+            <div id="ciudades" class="tab-content">
+                <h3><i data-lucide="building-2"></i> Ciudades Sedes</h3>
+                <p>Las urbes encargadas de recibir la marea multicultural de aficionados para los encuentros de este grupo.</p>
+                <ul>
+                    <li><strong>Houston:</strong> Una ciudad espacial, vibrante, con una enorme diversidad cultural y pasión deportiva.</li>
+                    <li><strong>San Francisco:</strong> El centro neurálgico de la innovación tecnológica costera, rodeado de paisajes icónicos.</li>
+                </ul>
+            </div>
+
+            <!-- Sección Historia -->
+            <div id="historia" class="tab-content">
+                <h3><i data-lucide="hourglass"></i> Historia de los Rivales</h3>
+                <p>Un verdadero choque de mundos futbolísticos. La tetracampeona Alemania se enfrenta a la velocidad africana de Costa de Marfil y al despliegue físico y técnico de Ecuador, un equipo sudamericano acostumbrado a competir en las eliminatorias más difíciles del planeta.</p>
+                <p>Por su parte, Curazao se presenta como la gran sorpresa de la zona caribeña, buscando escribir páginas doradas en su historia deportiva.</p>
+            </div>
+
+            <!-- Sección Estadísticas -->
+            <div id="estadisticas" class="tab-content">
+                <h3><i data-lucide="bar-chart-3"></i> Estadísticas del Grupo</h3>
+                <p>Datos y rendimiento histórico resumido de las selecciones del Grupo E:</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>País</th>
+                            <th>Mundiales Jugados</th>
+                            <th>Mejor Resultado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Alemania</td>
+                            <td>20</td>
+                            <td>Campeón (1954, 1974, 1990, 2014)</td>
+                        </tr>
+                        <tr>
+                            <td>Ecuador</td>
+                            <td>4</td>
+                            <td>Octavos de Final (2006)</td>
+                        </tr>
+                        <tr>
+                            <td>Costa de Marfil</td>
+                            <td>3</td>
+                            <td>Fase de Grupos (2006, 2010, 2014)</td>
+                        </tr>
+                        <tr>
+                            <td>Curazao</td>
+                            <td>0</td>
+                            <td>Debut Absoluto</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Sección Curiosidades -->
+            <div id="curiosidades" class="tab-content">
+                <h3><i data-lucide="sparkles"></i> Datos Curiosos</h3>
+                <ul>
+                    <li>¿Sabías qué? Alemania y Ecuador compartieron el Grupo A en el Mundial de 2006. En aquella ocasión, los germanos ganaron 3-0, pero ambos clasificaron a octavos de final.</li>
+                    <li>Curazao es una pequeña isla del Caribe, territorio autónomo de los Países Bajos, que ha logrado un crecimiento futbolístico impresionante integrando jugadores de ligas europeas.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <script src="grupoE.js"></script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundial 2026 - Grupo D</title>
+    <link rel="stylesheet" href="grupoD.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <i data-lucide="arrow-left"></i> Volver al <span>Inicio</span>
+            </a>
+            <div class="group-badge">Grupo D</div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="card group-teams-section">
+            <h2 class="section-title"><i data-lucide="shield"></i> Integrantes del Grupo</h2>
+            <div class="teams-list">
+                <div class="team-item">
+                    <span class="team-rank">1</span>
+                    <span class="team-flag">🇺🇸</span>
+                    <span class="team-name">EE. UU.</span>
+                </div>
+                <div class="team-item">
+                    <span class="team-rank">2</span>
+                    <span class="team-flag">🇵🇾</span>
+                    <span class="team-name">Paraguay</span>
+                </div>
+                <div class="team-item">
+                    <span class="team-rank">3</span>
+                    <span class="team-flag">🇦🇺</span>
+                    <span class="team-name">Australia</span>
+                </div>
+                <div class="team-item">
+                    <span class="team-rank">4</span>
+                    <span class="team-flag">🇹🇷</span>
+                    <span class="team-name">Turquía</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="tabs-container">
+            <button class="tab-btn active" data-tab="estadios">
+                <i data-lucide="map-pin"></i> Estadios
+            </button>
+            <button class="tab-btn" data-tab="ciudades">
+                <i data-lucide="building-2"></i> Ciudades
+            </button>
+            <button class="tab-btn" data-tab="historia">
+                <i data-lucide="hourglass"></i> Historia
+            </button>
+            <button class="tab-btn" data-tab="estadisticas">
+                <i data-lucide="bar-chart-3"></i> Estadísticas
+            </button>
+            <button class="tab-btn" data-tab="curiosidades">
+                <i data-lucide="sparkles"></i> Curiosidades
+            </button>
+        </section>
+
+        <section class="card content-display">
+            <div id="estadios" class="tab-content active">
+                <h3><i data-lucide="map-pin"></i> Estadios del Grupo D</h3>
+                <p>Las monumentales instalaciones designadas para el Grupo D albergarán duelos dinámicos e intensos debido a la diversidad física de los planteles.</p>
+                <ul>
+                    <li><strong>SoFi Stadium</strong> (Los Ángeles) - Capacidad: 70,000 espectadores. Una maravilla arquitectónica de vanguardia.</li>
+                    <li><strong>AT&T Stadium</strong> (Dallas) - Capacidad: 80,000 espectadores. Un imponente gigante con pantalla central colosal.</li>
+                </ul>
+            </div>
+
+            <div id="ciudades" class="tab-content">
+                <h3><i data-lucide="building-2"></i> Ciudades Sedes</h3>
+                <p>Las ciudades de la Costa Oeste y del sur norteamericano se visten de gala para hospedar a las aficiones del Grupo D.</p>
+                <ul>
+                    <li><strong>Los Ángeles:</strong> Cuna del entretenimiento mundial, lista para ofrecer un ambiente festivo inigualable.</li>
+                    <li><strong>Dallas:</strong> Una metrópoli gigante en Texas con infraestructuras deportivas del más alto nivel mundial.</li>
+                </ul>
+            </div>
+
+            <div id="historia" class="tab-content">
+                <h3><i data-lucide="hourglass"></i> Historia de los Rivales</h3>
+                <p>Un choque de continentes fascinante. Estados Unidos busca hacer respetar su localía, mientras que Paraguay trae consigo la mítica e histórica garra guaraní de Sudamérica.</p>
+                <p>Turquía quiere evocar las épocas doradas donde demostraron ser un rival de extremo cuidado, y Australia, los 'Socceroos', traen su característico despliegue físico y regularidad en los torneos grandes.</p>
+            </div>
+
+            <div id="estadisticas" class="tab-content">
+                <h3><i data-lucide="bar-chart-3"></i> Estadísticas del Grupo</h3>
+                <p>Historial destacado de las selecciones del Grupo D en citas internacionales:</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>País</th>
+                            <th>Participaciones</th>
+                            <th>Mejor Resultado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>EE. UU.</td>
+                            <td>11</td>
+                            <td>Tercer Lugar (1930)</td>
+                        </tr>
+                        <tr>
+                            <td>Paraguay</td>
+                            <td>8</td>
+                            <td>Cuartos de Final (2010)</td>
+                        </tr>
+                        <tr>
+                            <td>Turquía</td>
+                            <td>2</td>
+                            <td>Tercer Lugar (2002)</td>
+                        </tr>
+                        <tr>
+                            <td>Australia</td>
+                            <td>6</td>
+                            <td>Octavos de Final (2006, 2022)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="curiosidades" class="tab-content">
+                <h3><i data-lucide="sparkles"></i> Datos Curiosos</h3>
+                <ul>
+                    <li>¿Sabías qué? Turquía solo ha disputado dos mundiales en su historia, pero en el último que jugó (Corea-Japón 2002) asombró al mundo logrando la medalla de bronce.</li>
+                    <li>Australia solía competir en la confederación de Oceanía, pero se mudó a la Confederación Asiática de Fútbol (AFC) para elevar su nivel competitivo.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <script src="grupoD.js"></script>
+</body>
+</html>

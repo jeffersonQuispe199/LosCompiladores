@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundial 2026 - Grupo J</title>
+    <link rel="stylesheet" href="grupoJ.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <!-- Barra de Navegación Superior -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <i data-lucide="arrow-left"></i> Volver al <span>Inicio</span>
+            </a>
+            <div class="group-badge">Grupo J</div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Tabla de Posiciones / Miembros del Grupo -->
+        <section class="card group-teams-section">
+            <h2 class="section-title"><i data-lucide="shield"></i> Integrantes del Grupo</h2>
+            <div class="teams-list">
+                <div class="team-item">
+                    <span class="team-rank">1</span>
+                    <span class="team-flag">🇦🇷</span>
+                    <span class="team-name">Argentina</span>
+                </div>
+                <div class="team-item">
+                    <span class="team-rank">2</span>
+                    <span class="team-flag">🇩🇿</span>
+                    <span class="team-name">Argelia</span>
+                </div>
+                <div class="team-item">
+                    <span class="team-rank">3</span>
+                    <span class="team-flag">🇦🇹</span>
+                    <span class="team-name">Austria</span>
+                </div>
+                <div class="team-item">
+                    <span class="team-rank">4</span>
+                    <span class="team-flag">🇯🇴</span>
+                    <span class="team-name">Jordania</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Botonera Interactiva -->
+        <section class="tabs-container">
+            <button class="tab-btn active" data-tab="estadios">
+                <i data-lucide="map-pin"></i> Estadios
+            </button>
+            <button class="tab-btn" data-tab="ciudades">
+                <i data-lucide="building-2"></i> Ciudades
+            </button>
+            <button class="tab-btn" data-tab="historia">
+                <i data-lucide="hourglass"></i> Historia
+            </button>
+            <button class="tab-btn" data-tab="estadisticas">
+                <i data-lucide="bar-chart-3"></i> Estadísticas
+            </button>
+            <button class="tab-btn" data-tab="curiosidades">
+                <i data-lucide="sparkles"></i> Curiosidades
+            </button>
+        </section>
+
+        <!-- Contenedor de Contenido Dinámico -->
+        <section class="card content-display">
+            <!-- Sección Estadios -->
+            <div id="estadios" class="tab-content active">
+                <h3><i data-lucide="map-pin"></i> Estadios del Grupo J</h3>
+                <p>Las sedes destinadas para el Grupo J albergarán encuentros electrizantes en escenarios norteamericanos de primer nivel mundial.</p>
+                <ul>
+                    <li><strong>Hard Rock Stadium</strong> (Miami) - Capacidad: 65,300 espectadores. Un recinto espectacular con un techo cubierto diseñado para proteger de la lluvia y el calor.</li>
+                    <li><strong>Levi's Stadium</strong> (San Francisco / Santa Clara) - Capacidad: 68,500 espectadores. Un estadio de alta tecnología ecológica en el corazón de Silicon Valley.</li>
+                </ul>
+            </div>
+
+            <!-- Sección Ciudades -->
+            <div id="ciudades" class="tab-content">
+                <h3><i data-lucide="building-2"></i> Ciudades Sedes</h3>
+                <p>Dos costas, dos estilos de vida diferentes, pero unidas por la pasión de recibir a las aficiones del Grupo J.</p>
+                <ul>
+                    <li><strong>Miami:</strong> La capital de la cultura latina en Estados Unidos, donde el fútbol se vive con música, color y un ambiente festivo inigualable.</li>
+                    <li><strong>San Francisco (Área de la Bahía):</strong> Un núcleo cosmopolita e innovador que abre sus puertas al turismo masivo del balompié.</li>
+                </ul>
+            </div>
+
+            <!-- Sección Historia -->
+            <div id="historia" class="tab-content">
+                <h3><i data-lucide="hourglass"></i> Historia de los Rivales</h3>
+                <p>El gran atractivo de este grupo se centra en Argentina, tricampeona del mundo, que llega con la máxima exigencia sobre sus hombros. Argelia, los "Zorros del Desierto", traen la velocidad y el talento técnico de la escuela del norte de África que siempre compite al máximo nivel.</p>
+                <p>Austria representa la rigurosidad táctica, la disciplina y el contragolpe rápido del fútbol centroeuropeo moderno, mientras que Jordania hace su irrupción histórica en la escena mundial dispuesta a jugar sin complejos ante los gigantes.</p>
+            </div>
+
+            <!-- Sección Estadísticas -->
+            <div id="estadisticas" class="tab-content">
+                <h3><i data-lucide="bar-chart-3"></i> Estadísticas del Grupo</h3>
+                <p>Resumen del palmarés e historial acumulado de las selecciones que componen el Grupo J:</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>País</th>
+                            <th>Títulos Mundiales</th>
+                            <th>Mejor Resultado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Argentina</td>
+                            <td>3</td>
+                            <td>Campeón (1978, 1986, 2022)</td>
+                        </tr>
+                        <tr>
+                            <td>Austria</td>
+                            <td>0</td>
+                            <td>Tercer Lugar (1954)</td>
+                        </tr>
+                        <tr>
+                            <td>Argelia</td>
+                            <td>0</td>
+                            <td>Octavos de Final (2014)</td>
+                        </tr>
+                        <tr>
+                            <td>Jordania</td>
+                            <td>0</td>
+                            <td>Debut Absoluto</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Sección Curiosidades -->
+            <div id="curiosidades" class="tab-content">
+                <h3><i data-lucide="sparkles"></i> Datos Curiosos</h3>
+                <ul>
+                    <li>¿Sabías qué? Argelia protagonizó un hito en España 1982 al derrotar 2-1 a la poderosa Alemania Occidental. Esa sorpresiva victoria provocó el infame "Pacto de Gijón" entre alemanes y austriacos para eliminar a los africanos, lo que obligó a la FIFA a cambiar las reglas para que los últimos partidos de grupos se jueguen en simultáneo.</li>
+                    <li>Jordania se convierte en una de las grandes sorpresas de la confederación asiática al sellar su histórica primera clasificación a la fase final de una Copa del Mundo.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <script src="grupoJ.js"></script>
+</body>
+</html>

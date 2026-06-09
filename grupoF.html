@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundial 2026 - Grupo F</title>
+    <link rel="stylesheet" href="grupoF.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <!-- Barra de Navegación Superior -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <i data-lucide="arrow-left"></i> Volver al <span>Inicio</span>
+            </a>
+            <div class="group-badge">Grupo F</div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Tabla de Posiciones / Miembros del Grupo -->
+        <section class="card group-teams-section">
+            <h2 class="section-title"><i data-lucide="shield"></i> Integrantes del Grupo</h2>
+            <div class="teams-list">
+                <div class="team-item">
+                    <span class="team-rank">1</span>
+                    <span class="team-flag">🇳🇱</span>
+                    <span class="team-name">Países Bajos</span>
+                </div>
+                <div class="team-item">
+                    <span class="team-rank">2</span>
+                    <span class="team-flag">🇯🇵</span>
+                    <span class="team-name">Japón</span>
+                </div>
+                <div class="team-item">
+                    <span class="team-rank">3</span>
+                    <span class="team-flag">🇸🇪</span>
+                    <span class="team-name">Suecia</span>
+                </div>
+                <div class="team-item">
+                    <span class="team-rank">4</span>
+                    <span class="team-flag">🇹🇳</span>
+                    <span class="team-name">Túnez</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Botonera Interactiva -->
+        <section class="tabs-container">
+            <button class="tab-btn active" data-tab="estadios">
+                <i data-lucide="map-pin"></i> Estadios
+            </button>
+            <button class="tab-btn" data-tab="ciudades">
+                <i data-lucide="building-2"></i> Ciudades
+            </button>
+            <button class="tab-btn" data-tab="historia">
+                <i data-lucide="hourglass"></i> Historia
+            </button>
+            <button class="tab-btn" data-tab="estadisticas">
+                <i data-lucide="bar-chart-3"></i> Estadísticas
+            </button>
+            <button class="tab-btn" data-tab="curiosidades">
+                <i data-lucide="sparkles"></i> Curiosidades
+            </button>
+        </section>
+
+        <!-- Contenedor de Contenido Dinámico -->
+        <section class="card content-display">
+            <!-- Sección Estadios -->
+            <div id="estadios" class="tab-content active">
+                <h3><i data-lucide="map-pin"></i> Estadios del Grupo F</h3>
+                <p>Las sedes asignadas para albergar los encuentros del Grupo F prometen infraestructuras icónicas y atmósferas de juego inmejorables.</p>
+                <ul>
+                    <li><strong>Lumen Field</strong> (Seattle) - Capacidad: 69,000 espectadores. Conocido mundialmente por su diseño acústico que amplifica el ruido de la afición.</li>
+                    <li><strong>BC Place</strong> (Vancouver) - Capacidad: 54,500 espectadores. Un majestuoso estadio canadiense con techo retráctil soportado por cables.</li>
+                </ul>
+            </div>
+
+            <!-- Sección Ciudades -->
+            <div id="ciudades" class="tab-content">
+                <h3><i data-lucide="building-2"></i> Ciudades Sedes</h3>
+                <p>El norte del continente, caracterizado por sus paisajes montañosos y costeros, recibirá los intensos partidos de este grupo.</p>
+                <ul>
+                    <li><strong>Seattle:</strong> La ciudad de la tecnología y la música en el noroeste estadounidense, con una de las culturas futbolísticas más arraigadas del país.</li>
+                    <li><strong>Vancouver:</strong> Una espectacular joya canadiense rodeada de naturaleza, lista para recibir a miles de turistas internacionales.</li>
+                </ul>
+            </div>
+
+            <!-- Sección Historia -->
+            <div id="historia" class="tab-content">
+                <h3><i data-lucide="hourglass"></i> Historia de los Rivales</h3>
+                <p>Este es un grupo de altísimo orden táctico. Países Bajos y Suecia representan la escuela clásica europea de posesión, dinamismo y gran envergadura física.</p>
+                <p>Japón, los 'Samuráis Azules', aportan un fútbol moderno de transiciones ultra rápidas y disciplina impecable, mientras que Túnez equilibra la ecuación con el sólido orden defensivo y la garra característica del fútbol del norte de África.</p>
+            </div>
+
+            <!-- Sección Estadísticas -->
+            <div id="estadisticas" class="tab-content">
+                <h3><i data-lucide="bar-chart-3"></i> Estadísticas del Grupo</h3>
+                <p>Resumen del rendimiento histórico de las naciones del Grupo F en los mundiales de la FIFA:</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>País</th>
+                            <th>Subcampeonatos</th>
+                            <th>Mejor Resultado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Países Bajos</td>
+                            <td>3</td>
+                            <td>Subcampeón (1974, 1978, 2010)</td>
+                        </tr>
+                        <tr>
+                            <td>Suecia</td>
+                            <td>1</td>
+                            <td>Subcampeón (1958)</td>
+                        </tr>
+                        <tr>
+                            <td>Japón</td>
+                            <td>0</td>
+                            <td>Octavos de Final (4 ediciones)</td>
+                        </tr>
+                        <tr>
+                            <td>Túnez</td>
+                            <td>0</td>
+                            <td>Fase de Grupos (6 ediciones)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Sección Curiosidades -->
+            <div id="curiosidades" class="tab-content">
+                <h3><i data-lucide="sparkles"></i> Datos Curiosos</h3>
+                <ul>
+                    <li>¿Sabías qué? Países Bajos es considerada históricamente la "reina sin corona" de los mundiales, al haber disputado tres finales absolutas sin poder quedarse con el título.</li>
+                    <li>Japón dio uno de los mayores golpes de autoridad en la pasada edición de 2022 al derrotar consecutivamente a dos gigantes campeones del mundo en su grupo: Alemania y España.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <script src="grupoF.js"></script>
+</body>
+</html>
