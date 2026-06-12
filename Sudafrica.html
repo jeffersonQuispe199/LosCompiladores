@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudáfrica - Información del Equipo</title>
+    <link rel="stylesheet" href="grupoA.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="grupoA.html" class="nav-logo">
+                <i data-lucide="arrow-left"></i> Volver al <span>Grupo A</span>
+            </a>
+            <div class="group-badge">Selección Nacional</div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="card" style="text-align: center; margin-bottom: 2rem;">
+            <img src="https://flagcdn.com/w160/za.png" alt="Bandera de Sudáfrica" style="border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.5); margin-bottom: 1rem;">
+            <h1 style="font-size: 2.5rem; color: var(--text-main); margin-bottom: 0.5rem;">Sudáfrica</h1>
+            <p style="color: var(--accent-color); font-weight: bold; font-size: 1.1rem;">Confederación: CAF (África)</p>
+        </div>
+
+        <section class="card">
+            <h2 class="section-title"><i data-lucide="info"></i> Reseña Histórica</h2>
+            <p style="color: var(--text-muted); line-height: 1.6; margin-bottom: 1.5rem;">
+                La Selección de Sudáfrica, popularmente conocida como "Bafana Bafana" (Los Muchachos), es un equipo con gran relevancia en el continente africano. Recordada a nivel mundial por su histórica organización del torneo en 2010 y el icónico gol de Siphiwe Tshabalala en el partido inaugural contra México.
+            </p>
+            
+            <h2 class="section-title"><i data-lucide="award"></i> Datos Clave de la Selección</h2>
+            <ul style="margin-left: 1.5rem; color: var(--text-muted); line-height: 1.8;">
+                <li><strong>Estilo de Juego:</strong> Destacan por su despliegue físico, velocidad por las bandas y una gran disciplina táctica.</li>
+                <li><strong>Estadio Emblemático:</strong> El FNB Stadium (Soccer City) en Johannesburgo.</li>
+                <li><strong>Palmarés Destacado:</strong> Campeones de la Copa Africana de Naciones en 1996.</li>
+                <li><strong>Uniforme Tradicional:</strong> Camiseta amarilla con detalles verdes, pantaloneta verde y medias amarillas.</li>
+            </ul>
+        </section>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            if (typeof lucide !== 'undefined') { lucide.createIcons(); }
+        });
+    </script>
+</body>
+</html>

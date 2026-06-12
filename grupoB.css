@@ -237,3 +237,8 @@ td {
     overflow-x: auto;
     margin-top: 15px;
 }
+.teams-list a:hover .team-item {
+    border-color: var(--accent-color); 
+    background: rgba(255, 255, 255, 0.08);
+    transform: translateY(-2px);  
+}

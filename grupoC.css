@@ -2,7 +2,8 @@
     --bg-gradient: linear-gradient(135deg, #050a0e 0%, #0e161c 100%);
     --glass-bg: rgba(255, 255, 255, 0.03);
     --glass-border: rgba(255, 255, 255, 0.08);
-    --accent-color: #eab308; /* Amarillo Oro para el Grupo C */
+    --accent-color: #eab308;
+    /* Amarillo Oro para el Grupo C */
     --accent-hover: #ca8a04;
     --text-main: #f3f4f6;
     --text-muted: #9ca3af;
@@ -115,11 +116,14 @@ main {
 
 /* --- ESTILO PARA LAS IMÁGENES DE LAS BANDERAS --- */
 .team-flag-img {
-    width: 28px;               /* Tamaño ideal para la lista */
+    width: 28px;
+    /* Tamaño ideal para la lista */
     height: auto;
-    border-radius: 4px;        /* Bordes sutilmente redondeados */
+    border-radius: 4px;
+    /* Bordes sutilmente redondeados */
     object-fit: cover;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4); /* Sombra para darle profundidad */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    /* Sombra para darle profundidad */
     display: block;
 }
 
@@ -139,6 +143,7 @@ main {
 .tabs-container::-webkit-scrollbar {
     height: 4px;
 }
+
 .tabs-container::-webkit-scrollbar-thumb {
     background: var(--glass-border);
     border-radius: 2px;
@@ -211,7 +216,8 @@ table {
     overflow: hidden;
 }
 
-th, td {
+th,
+td {
     padding: 0.75rem 1rem;
     text-align: left;
 }
@@ -229,6 +235,19 @@ td {
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(5px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.teams-list a:hover .team-item {
+    border-color: var(--accent-color);
+    background: rgba(255, 255, 255, 0.08);
+    transform: translateY(-2px);
 }
