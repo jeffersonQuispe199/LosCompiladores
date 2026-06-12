@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suiza - Información del Equipo</title>
+    <link rel="stylesheet" href="grupoB.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="grupoB.html" class="nav-logo">
+                <i data-lucide="arrow-left"></i> Volver al <span>Grupo B</span>
+            </a>
+            <div class="group-badge">Selección Nacional</div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="card" style="text-align: center; margin-bottom: 2rem;">
+            <img src="https://flagcdn.com/w160/ch.png" alt="Bandera de Suiza" style="border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.5); margin-bottom: 1rem;">
+            <h1 style="font-size: 2.5rem; color: var(--text-main); margin-bottom: 0.5rem;">Suiza</h1>
+            <p style="color: var(--accent-color); font-weight: bold; font-size: 1.1rem;">Confederación: UEFA (Europa)</p>
+        </div>
+
+        <section class="card">
+            <h2 class="section-title"><i data-lucide="info"></i> Reseña Histórica</h2>
+            <p style="color: var(--text-muted); line-height: 1.6; margin-bottom: 1.5rem;">
+                La Selección de Suiza, apodada "Nati", es sinónimo de consistencia, disciplina y solidez en los torneos internacionales. Acostumbrada a competir en las fases de eliminación directa, la escuadra helvética destaca por ser un rival incómodo para cualquier potencia gracias a su impecable estructura táctica.
+            </p>
+            
+            <h2 class="section-title"><i data-lucide="award"></i> Datos Clave de la Selección</h2>
+            <ul style="margin-left: 1.5rem; color: var(--text-muted); line-height: 1.8;">
+                <li><strong>Estilo de Juego:</strong> Riguroso orden en zona defensiva, presión en bloque medio y un mediocampo balanceado que maneja los tiempos del partido.</li>
+                <li><strong>Mejor Resultado en Mundiales:</strong> Cuartos de Final en tres ocasiones (1934, 1938 y siendo anfitriones en 1954).</li>
+                <li><strong>Rendimiento Reciente:</strong> Presencia fija en octavos de final en las últimas citas mundialistas.</li>
+                <li><strong>Uniforme Tradicional:</strong> Camiseta roja con la cruz blanca en el pecho, pantaloneta blanca y medias rojas.</li>
+            </ul>
+        </section>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            if (typeof lucide !== 'undefined') { lucide.createIcons(); }
+        });
+    </script>
+</body>
+</html>
