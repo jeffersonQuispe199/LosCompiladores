@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haití - Información del Equipo</title>
+    <link rel="stylesheet" href="grupoC.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="grupoC.html" class="nav-logo">
+                <i data-lucide="arrow-left"></i> Volver al <span>Grupo C</span>
+            </a>
+            <div class="group-badge">Selección Nacional</div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="card" style="text-align: center; margin-bottom: 2rem;">
+            <img src="https://flagcdn.com/w160/ht.png" alt="Bandera de Haití" style="border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.5); margin-bottom: 1rem;">
+            <h1 style="font-size: 2.5rem; color: var(--text-main); margin-bottom: 0.5rem;">Haití</h1>
+            <p style="color: var(--accent-color); font-weight: bold; font-size: 1.1rem;">Confederación: CONCACAF</p>
+        </div>
+
+        <section class="card">
+            <h2 class="section-title"><i data-lucide="info"></i> Reseña Histórica</h2>
+            <p style="color: var(--text-muted); line-height: 1.6; margin-bottom: 1.5rem;">
+                La Selección de Haití, conocida como "Les Grenadiers" (Los Granaderos), representa la pasión caribeña por el fútbol. Cuenta con un trasfondo histórico importante al haber sido una de las pocas selecciones de su zona en clasificar a las fases finales de los torneos grandes en el siglo pasado.
+            </p>
+            
+            <h2 class="section-title"><i data-lucide="award"></i> Datos Clave de la Selección</h2>
+            <ul style="margin-left: 1.5rem; color: var(--text-muted); line-height: 1.8;">
+                <li><strong>Estilo de Juego:</strong> Juego dinámico apoyado en la fuerza física, la improvisación y un espíritu de lucha inquebrantable.</li>
+                <li><strong>Hito Histórico:</strong> Participación memorable en la Copa Mundial de la FIFA Alemania 1974.</li>
+                <li><strong>Palmarés de la Región:</strong> Campeones del Campeonato de Naciones de la Concacaf en 1973.</li>
+                <li><strong>Uniforme Tradicional:</strong> Camiseta azul con mangas rojas, pantaloneta azul y medias rojas.</li>
+            </ul>
+        </section>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            if (typeof lucide !== 'undefined') { lucide.createIcons(); }
+        });
+    </script>
+</body>
+</html>
