@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundial 2026 - Integrantes</title>
+    <link rel="stylesheet" href="Principal.css">
+    <!-- Estilos específicos adicionales para la sección de integrantes -->
+    <style>
+        .members-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .profile-card {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+        .images-container {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 0.5rem;
+        }
+        .avatar-box {
+            width: 70px;
+            height: 70px;
+            background: #334155;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--accent-color);
+            border: 2px solid var(--glass-border);
+        }
+        .photo-box {
+            width: 100px;
+            height: 100px;
+            border-radius: 16px;
+            object-fit: cover;
+            border: 2px solid var(--accent-color);
+            box-shadow: 0 0 15px rgba(56, 189, 248, 0.2);
+        }
+        .member-details h3 {
+            font-size: 1.6rem;
+            color: var(--text-main);
+            margin-bottom: 0.25rem;
+        }
+        .github-user {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.9rem;
+            transition: background 0.3s;
+            margin-bottom: 0.5rem;
+        }
+        .github-user:hover {
+            background: rgba(56, 189, 248, 0.1);
+        }
+        .birth-date {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.3rem;
+        }
+    </style>
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <i data-lucide="trophy"></i> MUNDIAL<span>2026</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link"><i data-lucide="home"></i> Inicio</a></li>
+                <li><a href="integrantes.html" class="nav-link active"><i data-lucide="users"></i> Equipo</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero-section">
+            <h1>Integrantes del Equipo</h1>
+            <p>Desarrolladores a cargo del Proyecto Mundial 2026.</p>
+        </section>
+
+        <div class="members-container">
+            
+            <!-- SECCIÓN INTEGRANTE 1: GIANLUCA -->
+                    <section class="card profile-card">
+                <div class="images-container">
+                    <div class="avatar-box">
+                        <i data-lucide="code-2" style="width: 36px; height: 36px;"></i>
+                    </div>
+                    <img src="Foto_Gian.JPG" alt="Fotografía de Gianluca" class="photo-box">
+                </div>
+                
+                <div class="member-details">
+                    <h3>Gianluca Paredes</h3>
+                    <a href="https://github.com/gianlucaparedes6-sys" target="_blank" class="github-user">
+                        <i data-lucide="github" style="width: 16px; height: 16px;"></i> gianlucaparedes6-sys
+                    </a>
+                    <div class="birth-date">
+                        <i data-lucide="calendar" style="width: 14px; height: 14px;"></i>
+                        <span>Fecha de Nacimiento: 27/11/1996</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECCIÓN INTEGRANTE 2 y 3 -->
+           
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Sistema de Gestión Mundial. Desarrollado con Arquitectura Web Limpia.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- 1. Enlace al script global (asegúrate de que el nombre coincida, ej: principal.js o script.js) -->
+    <script src="principal.js"></script>
+
+    <!-- 2. Código de respaldo para activar los iconos inmediatamente en esta página -->
+    <script>
+        if (typeof lucide !== 'undefined') {
+            lucide.createIcons();
+        }
+    </script>
+</body>
+</body>
+</html>
