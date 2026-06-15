@@ -105,6 +105,7 @@ main {
     padding: 1rem;
     border-radius: 12px;
     border: 1px solid var(--glass-border);
+    transition: all 0.2s ease;
 }
 
 .team-rank {
@@ -113,8 +114,13 @@ main {
     font-size: 1.1rem;
 }
 
-.team-flag {
-    font-size: 1.5rem;
+.team-flag-img {
+    width: 28px;
+    height: auto;
+    border-radius: 4px;
+    object-fit: cover;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    display: block;
 }
 
 .team-name {
@@ -130,7 +136,6 @@ main {
     margin-bottom: 1.5rem;
 }
 
-/* Ocultar barra de scroll estéticamente en la botonera */
 .tabs-container::-webkit-scrollbar {
     height: 4px;
 }
@@ -226,4 +231,11 @@ td {
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(5px); }
     to { opacity: 1; transform: translateY(0); }
+}
+
+/* elefecto sencillo para que sepan que es un botón */
+.teams-list a:hover .team-item {
+    border-color: var(--accent-color);
+    background: rgba(255, 255, 255, 0.08);
+    transform: translateY(-2px);
 }

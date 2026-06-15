@@ -113,8 +113,14 @@ main {
     font-size: 1.1rem;
 }
 
-.team-flag {
-    font-size: 1.5rem;
+/* --- ESTILO PARA LAS IMÁGENES DE LAS BANDERAS --- */
+.team-flag-img {
+    width: 28px;               /* Tamaño ideal para la lista */
+    height: auto;
+    border-radius: 4px;        /* Bordes sutilmente redondeados */
+    object-fit: cover;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4); /* Sombra para darle profundidad */
+    display: block;
 }
 
 .team-name {
@@ -225,4 +231,14 @@ td {
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(5px); }
     to { opacity: 1; transform: translateY(0); }
+}
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 15px;
+}
+.teams-list a:hover .team-item {
+    border-color: var(--accent-color); 
+    background: rgba(255, 255, 255, 0.08);
+    transform: translateY(-2px);  
 }

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catar - Información del Equipo</title>
+    <link rel="stylesheet" href="grupoB.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="grupoB.html" class="nav-logo">
+                <i data-lucide="arrow-left"></i> Volver al <span>Grupo B</span>
+            </a>
+            <div class="group-badge">Selección Nacional</div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="card" style="text-align: center; margin-bottom: 2rem;">
+            <img src="https://flagcdn.com/w160/qa.png" alt="Bandera de Catar" style="border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.5); margin-bottom: 1rem;">
+            <h1 style="font-size: 2.5rem; color: var(--text-main); margin-bottom: 0.5rem;">Catar</h1>
+            <p style="color: var(--accent-color); font-weight: bold; font-size: 1.1rem;">Confederación: AFC (Asia)</p>
+        </div>
+
+        <section class="card">
+            <h2 class="section-title"><i data-lucide="info"></i> Reseña Histórica</h2>
+            <p style="color: var(--text-muted); line-height: 1.6; margin-bottom: 1.5rem;">
+                La Selección de fútbol de Catar, conocidos como "Al-Annabi" (Los Marrones), es uno de los proyectos deportivos con mayor inversión de Asia. Tras haber organizado el Mundial anterior, el equipo ha ganado madurez competitiva y busca demostrar su dominio continental fuera de su territorio.
+            </p>
+            
+            <h2 class="section-title"><i data-lucide="award"></i> Datos Clave de la Selección</h2>
+            <ul style="margin-left: 1.5rem; color: var(--text-muted); line-height: 1.8;">
+                <li><strong>Estilo de Juego:</strong> Basado en el orden defensivo, transiciones al contragolpe muy rápidas y un gran entendimiento colectivo entre sus jugadores.</li>
+                <li><strong>Palmarés Destacado:</strong> Bicampeones de la Copa Asiática de manera consecutiva.</li>
+                <li><strong>Experiencia Internacional:</strong> Participaciones como invitado en la Copa América y Copa Oro para foguear su plantilla.</li>
+                <li><strong>Uniforme Tradicional:</strong> Camiseta y pantaloneta color marrón granate (color de su bandera) con sutiles detalles blancos.</li>
+            </ul>
+        </section>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            if (typeof lucide !== 'undefined') { lucide.createIcons(); }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brasil - Información del Equipo</title>
+    <link rel="stylesheet" href="grupoC.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="grupoC.html" class="nav-logo">
+                <i data-lucide="arrow-left"></i> Volver al <span>Grupo C</span>
+            </a>
+            <div class="group-badge">Selección Nacional</div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="card" style="text-align: center; margin-bottom: 2rem;">
+            <img src="https://flagcdn.com/w160/br.png" alt="Bandera de Brasil" style="border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.5); margin-bottom: 1rem;">
+            <h1 style="font-size: 2.5rem; color: var(--text-main); margin-bottom: 0.5rem;">Brasil</h1>
+            <p style="color: var(--accent-color); font-weight: bold; font-size: 1.1rem;">Confederación: CONMEBOL (Sudamérica)</p>
+        </div>
+
+        <section class="card">
+            <h2 class="section-title"><i data-lucide="info"></i> Reseña Histórica</h2>
+            <p style="color: var(--text-muted); line-height: 1.6; margin-bottom: 1.5rem;">
+                La Selección de Brasil, conocida como la "Canarinha" o "Scratch du Oro", es la escuadra más laureada en la historia del fútbol mundial. Única selección que ha disputado todas las ediciones del torneo, es sinónimo del "Jogo Bonito" y siempre llega con la etiqueta de máxima favorita al título.
+            </p>
+            
+            <h2 class="section-title"><i data-lucide="award"></i> Datos Clave de la Selección</h2>
+            <ul style="margin-left: 1.5rem; color: var(--text-muted); line-height: 1.8;">
+                <li><strong>Estilo de Juego:</strong> Creatividad ofensiva deslumbrante, alta capacidad técnica individual y desborde constante por las bandas.</li>
+                <li><strong>Palmarés Supremo:</strong> Pentacampeones mundiales (1958, 1962, 1970, 1994 y 2002).</li>
+                <li><strong>Leyenda Máxima:</strong> Pelé, considerado uno de los mejores futbolistas de todos los tiempos.</li>
+                <li><strong>Uniforme Tradicional:</strong> Camiseta amarilla con cuello verde, pantaloneta azul y medias blancas.</li>
+            </ul>
+        </section>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            if (typeof lucide !== 'undefined') { lucide.createIcons(); }
+        });
+    </script>
+</body>
+</html>

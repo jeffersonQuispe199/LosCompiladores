@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marruecos - Información del Equipo</title>
+    <link rel="stylesheet" href="grupoC.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="grupoC.html" class="nav-logo">
+                <i data-lucide="arrow-left"></i> Volver al <span>Grupo C</span>
+            </a>
+            <div class="group-badge">Selección Nacional</div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="card" style="text-align: center; margin-bottom: 2rem;">
+            <img src="https://flagcdn.com/w160/ma.png" alt="Bandera de Marruecos" style="border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.5); margin-bottom: 1rem;">
+            <h1 style="font-size: 2.5rem; color: var(--text-main); margin-bottom: 0.5rem;">Marruecos</h1>
+            <p style="color: var(--accent-color); font-weight: bold; font-size: 1.1rem;">Confederación: CAF (África)</p>
+        </div>
+
+        <section class="card">
+            <h2 class="section-title"><i data-lucide="info"></i> Reseña Histórica</h2>
+            <p style="color: var(--text-muted); line-height: 1.6; margin-bottom: 1.5rem;">
+                La Selección de Marruecos, apodada "Los Leones del Atlas", hizo historia mundial al convertirse en la primera escuadra africana y árabe en alcanzar las semifinales de una Copa del Mundo. Su fútbol moderno e intenso se ha ganado el respeto y la admiración de todo el planeta.
+            </p>
+            
+            <h2 class="section-title"><i data-lucide="award"></i> Datos Clave de la Selección</h2>
+            <ul style="margin-left: 1.5rem; color: var(--text-muted); line-height: 1.8;">
+                <li><strong>Estilo de Juego:</strong> Impresionante orden táctico defensivo, transiciones a toda velocidad y una entrega colectiva incansable.</li>
+                <li><strong>Hito Histórico:</strong> Cuarto lugar en la Copa Mundial de la FIFA Qatar 2022.</li>
+                <li><strong>Rivalidades Continentales:</strong> Campeones de la Copa Africana de Naciones en 1976.</li>
+                <li><strong>Uniforme Tradicional:</strong> Camiseta roja con detalles verdes, pantaloneta verde y medias rojas.</li>
+            </ul>
+        </section>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            if (typeof lucide !== 'undefined') { lucide.createIcons(); }
+        });
+    </script>
+</body>
+</html>
